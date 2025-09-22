@@ -39,7 +39,7 @@ export default defineConfig([
             "@typescript-eslint/no-extra-non-null-assertion": "error",
             "@typescript-eslint/no-import-type-side-effects": "error",
             "@typescript-eslint/no-require-imports": "warn",
-            "@typescript-eslint/no-var-requires": "error",
+            "@typescript-eslint/no-var-requires": "warn",
 
             "@stylistic/semi": "error",
             "@stylistic/indent": 'error',
