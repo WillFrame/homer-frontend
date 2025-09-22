@@ -2,7 +2,6 @@
     "name": "homer",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -21,8 +20,7 @@
         "globals": "^16.4.0",
         "jiti": "^2.5.1",
         "typescript": "5.8.3",
-        "typescript-eslint": "^8.44.0",
-        "webpack": "^5.98.0"
+        "typescript-eslint": "8.44.0"
     },
     "dependencies": {
         "@headlessui/react": "^2.2.8",
