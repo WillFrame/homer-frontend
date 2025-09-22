@@ -1,12 +1,14 @@
 import React from 'react';
 import PageProvider from '@/modules/page-provider';
-import { LayoutComponent } from './types';
+import {LayoutComponent} from './types';
 
 const RootLayout: LayoutComponent = ({children}) => {
     return (
-        <html lang="ru">
+        <html lang="ru" data-theme="light">
             <body>
-                {children}
+                <PageProvider>
+                    {children}
+                </PageProvider>
             </body>
         </html>
     );

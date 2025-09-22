@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+* {
+  transition: none !important;
+}
+
+/* Включаем плавные переходы после загрузки */
+body.loaded * {
+  transition: all 0.3s ease;
+}
+
+:root {
+    --font-size-primary: 14px;
+    --padding-step: 4px;
+    --border-radius: 6px;
+    --border-step: 1px;
+}
+
+[data-theme="light"] {
+    --primary: #a5a474;
+    --secondary: #90709b;
+
+
+    --primary-bg: #cfce91;
+    --secondary-bg: #b48dc2;
+    --text-primary: #161a15;
+}
+
+[data-theme="dark"] {
+    --primary-500: #99404c;
+    --secondary-500: #161a15;
+
+
+    --primary-bg: #ad666f;
+    --secondary-bg: #444743;
+    --text-primary: #f9fafb;
+}

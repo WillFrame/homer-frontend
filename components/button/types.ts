@@ -1,3 +1,8 @@
-import {FC} from 'react';
+import {ButtonProps} from '@headlessui/react';
+import {FC, PropsWithChildren} from 'react';
 
-export type Component = FC;
+type Props = ButtonProps & {
+    type?: 'primary' | 'secondary';
+};
+
+export type Component = FC<PropsWithChildren<Props>>;

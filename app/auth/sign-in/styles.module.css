@@ -1,0 +1,17 @@
+.pageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--secondary-bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background-color: var(--primary-bg);
+    max-width: 80%;
+    width: 400px;
+}
