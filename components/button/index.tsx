@@ -6,7 +6,6 @@ import styles from './styles.module.css';
 
 const Button: Component = ({
     children = 'Button',
-    type = 'primary',
     ...rest
 }) => (
     <HeadlessButton

@@ -6,7 +6,7 @@ import {defineConfig, globalIgnores} from "eslint/config";
 import stylistic from '@stylistic/eslint-plugin';
 
 export default defineConfig([
-    globalIgnores(['next-env.d.ts']),
+    globalIgnores(['next-env.d.ts', '.next']),
     {
         files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
         plugins: {
@@ -42,7 +42,8 @@ export default defineConfig([
             "@typescript-eslint/no-var-requires": "error",
 
             "@stylistic/semi": "error",
-            "@stylistic/jsx-indent": 'error',
+            "@stylistic/indent": 'error',
+            "@stylistic/eol-last": ["error", "always"],
         },
     },
     tseslint.configs.recommended,
