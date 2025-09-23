@@ -1,0 +1,24 @@
+.input {
+    padding: calc(var(--padding-step) * 2);
+    font-size: var(--font-size-primary);
+    color: var(--text-primary);
+    background-color: var(--primary-bg);
+    border-radius: var(--border-radius);
+
+    border-color: var(--secondary);
+    border-width: var(--border-step);
+    border-style: solid;
+}
+
+.input:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--text-secondary);
+}

@@ -1,27 +1,27 @@
 import React from 'react';
 
 import {Component} from './types';
-import {Button as HeadlessButton} from '@headlessui/react';
 import styles from './styles.module.css';
 import {classNames} from '@/utils/classnames';
-import Text from '@/ui-kit/text';
 
-const Button: Component = ({
-    children = 'Button',
+const Text: Component = ({
+    as: Component = 'p',
     type = 'primary',
+    children,
     additionalClasses = [],
     ...rest
 }) => (
-    <HeadlessButton
+    <Component
         className={classNames(
-            styles.button,
-            styles[`button--${type}`],
+            styles.text,
+            styles[`text--${type}`],
+            styles[`text--${Component}`],
             ...additionalClasses,
         )}
         {...rest}
     >
-        <Text>{children}</Text>
-    </HeadlessButton>
+        {children}
+    </Component>
 );
 
-export default Button;
+export default Text;

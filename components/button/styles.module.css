@@ -1,11 +1,26 @@
 .button {
-    padding: var(--padding-step);
+    padding: calc(var(--padding-step) * 2);
     font-size: var(--font-size-primary);
     color: var(--text-primary);
     background-color: var(--primary-bg);
     border-radius: var(--border-radius);
-    border-color: var(--primary);
 
+    border-color: var(--primary);
     border-width: var(--border-step);
     border-style: solid;
+}
+
+.button--primary {
+    background-color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.button--secondary {
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }

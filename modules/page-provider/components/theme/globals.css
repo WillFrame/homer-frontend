@@ -3,16 +3,20 @@ body {
 }
 
 * {
-  transition: none !important;
-}
-
-/* Включаем плавные переходы после загрузки */
-body.loaded * {
-  transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 :root {
-    --font-size-primary: 14px;
+    font-family: 'system-ui', monospace, sans-serif;
+    --font-size-primary: 16px;
+    --font-size-secondary: 12px;
+    --font-size-h1: 28px;
+    --font-size-h2: 22px;
+    --font-size-h3: 20px;
+    --font-size-h4: 18px;
+    --font-size-h5: 16px;
+    --font-size-h6: 14px;
+
     --padding-step: 4px;
     --border-radius: 6px;
     --border-step: 1px;
@@ -26,14 +30,16 @@ body.loaded * {
     --primary-bg: #cfce91;
     --secondary-bg: #b48dc2;
     --text-primary: #161a15;
+    --text-secondary: #737572;
 }
 
 [data-theme="dark"] {
-    --primary-500: #99404c;
-    --secondary-500: #161a15;
+    --primary: #99404c;
+    --secondary: #161a15;
 
 
     --primary-bg: #ad666f;
     --secondary-bg: #444743;
     --text-primary: #f9fafb;
+    --text-secondary:#aeafaf;
 }
