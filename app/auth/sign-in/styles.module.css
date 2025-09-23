@@ -1,6 +1,8 @@
 .pageWrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: calc(var(--padding-step) * 3);
     align-items: center;
     height: 100vh;
     background-color: var(--secondary-bg);
@@ -9,9 +11,17 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 12px;
+    gap: calc(var(--padding-step) * 5);
+    padding: calc(var(--padding-step) * 6);
     background-color: var(--primary-bg);
     max-width: 80%;
     width: 400px;
+    border-radius: calc(var(--border-radius) * 2);
+    border-color: var(--primary);
+    border-width: var(--border-step);
+    border-style: solid;
+}
+
+.title {
+    text-align: center;
 }

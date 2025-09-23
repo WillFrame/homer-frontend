@@ -3,14 +3,14 @@ import Button from '@/components/button';
 import Input from '@/components/input';
 import styles from './styles.module.css';
 import type {PageComponent} from './types';
-import ThemeToggle from '@/modules/theme-toggle';
+import Text from '@/ui-kit/text';
 
 const SignIn: PageComponent = () => {
     return (
         <div className={styles['wrapper']}>
-            <ThemeToggle />
-            <Input />
-            <Input />
+            <Text as='h1' additionalClasses={[styles['title']]}>Войти</Text>
+            <Input placeholder="Логин" />
+            <Input placeholder="Пароль" />
             <Button>
                 Войти
             </Button>

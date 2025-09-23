@@ -10,7 +10,8 @@
         "paths": {
             "@/components/*": ["components/*"],
             "@/modules/*": ["modules/*"],
-            "@/ui-kit/*": ["ui-kit/*"]
+            "@/ui-kit/*": ["ui-kit/*"],
+            "@/utils/*": ["utils/*"]
         },
         "allowJs": true,
         "skipLibCheck": true,
