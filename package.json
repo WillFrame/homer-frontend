@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
+        "dev": "dotenv -e .env.dev next dev",
+        "build": "dotenv -e .env.prod next build",
         "start": "next start",
         "lint-fix": "./node_modules/.bin/eslint \"./**/*.{ts,tsx}\" --fix"
     },
@@ -16,6 +16,7 @@
         "@stylistic/eslint-plugin": "^5.4.0",
         "@types/node": "24.5.2",
         "@types/react": "19.1.8",
+        "dotenv-cli": "^10.0.0",
         "eslint": "^9.35.0",
         "eslint-plugin-react": "^7.37.5",
         "globals": "^16.4.0",
@@ -25,8 +26,10 @@
     },
     "dependencies": {
         "@headlessui/react": "^2.2.8",
+        "axios": "^1.12.2",
         "next": "^15.3.3",
         "react": "^19.1.0",
-        "react-dom": "^19.1.0"
+        "react-dom": "^19.1.0",
+        "react-hook-form": "^7.63.0"
     }
 }
